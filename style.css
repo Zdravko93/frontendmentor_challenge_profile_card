@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 30em;
+    height: 25em;
+    position: relative;
+
+    z-index: 100;
+}
+
+.card__bg {
+    background: url('./images/bg-pattern-card.svg');
+    height: 15vh;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.img__placeholder {
+    display: flex;
+    justify-content: center;
+    background: white;
+
+    position: relative;
+}
+
+.profile__img {
+    height: auto;
+    position: absolute;
+    border-radius: 50%;
+    top: -2.8em;
+
+    border: 4px solid white;
+}
+
+.card__info,
+.card__social {
+    background: white;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5em;
+    padding-bottom: 1em;
+
+    border-bottom: 1px solid hsl(0, 10%, 88%);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h1 span,
+.card__city {
+    color: hsl(0, 0%, 59%);
+}
+
+h1 span {
+    padding: 0.3em;
+    font-weight: 300;
+}
+
+.card__city {
+    padding: 1em;
+}
+
+.card__social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    text-align: center;
+}
+
+.card__wrap {
+    padding: 2em;
+}
+
+.card__wrap h2 {
+    padding-bottom: 0.3em;
+}
+
+.card__text {
+    color: hsl(227, 10%, 46%);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* BACKGROUND IMAGES POSITIONING */
+.circle__1,
+.circle__2 {
+    position: absolute;
+    z-index: -1;
+}
+
+.circle__1 {
+    top: -50em;
+    left: -45em;
+}
+
+.circle__2 {
+    bottom: -50em;
+    right: -44em;
+}
