@@ -112,6 +112,7 @@ h1 span {
     color: hsl(227, 10%, 46%);
     text-align: center;
     letter-spacing: 2px;
+    font-size: 0.7em;
 }
 
 /* BACKGROUND IMAGES POSITIONING */
